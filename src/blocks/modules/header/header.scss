@@ -1,0 +1,144 @@
+.header {
+    position: fixed;
+    z-index: 50;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-family: $textFont;
+    text-align: center;
+
+
+    //plashka
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    &__body {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        height: 100%;
+    }
+    &__logo {
+        display: flex;
+        color: $yellow;
+        font-family: $mainFont;
+        text-decoration: none;
+        font-size: 1.4rem;
+    }
+
+    &__menu {
+        flex-basis: 85%;
+    }
+
+    &__list {
+        display: flex;
+        flex-basis: 100%;
+        align-items: center;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__link {
+        transition: all .25s;
+        font-family: $textFont;
+        font-weight: 300;
+        color: #fff;
+        text-decoration: none;
+       
+
+        &:hover {
+            cursor: pointer;
+            color: $green;
+        }
+
+        .link-hover {
+            display: inline-block;
+            padding: 1rem .25rem;
+        }
+    }
+
+    &__burger {
+        display: none;
+    }
+}
+
+
+
+
+@media (max-width: 920px) {
+    .header__list {
+        flex-direction: column;
+        justify-content: space-around;
+        position: fixed;
+        z-index: 1000;
+        top: 0;
+        right: -100%;
+        width: 40%;
+        height: 100vh;
+        overflow: auto;
+        padding: 20px 15px;
+        transition: .8s;
+        background-color: rgba(0, 0, 0, 0.897);
+        border-left: 2px dashed $green;
+    }
+
+    .menu_active {
+        right: 0;
+    }
+
+    .header__body {
+        padding: 1.5rem 0;
+    }
+
+    .header__logo {
+        flex-basis: 100%;
+    }
+
+  
+
+    .header__burger {
+        display: block;
+        position: fixed;
+        z-index: 1100;
+        right: 25px;
+        width: 25px;
+        height: 25px;
+    }
+
+    .header__burger span {
+        display: block;
+        width: 100%;
+        height: 2px;
+        background-color: darken($green, 20%);
+    }
+
+    .header__burger span:not(first-child) {
+        margin-top: 3px;
+    }
+
+    .burger_active span {
+        margin-bottom: -10px;
+        transition: all .3s;
+    }
+
+    .burger_active span:nth-child(1) {
+        transform: rotate(-45deg);
+    }
+
+    .burger_active span:nth-child(2) {
+        display: none;
+    }
+
+    .burger_active span:nth-child(3) {
+        transform: rotate(45deg);
+        margin-top: 8px;
+    }
+}
