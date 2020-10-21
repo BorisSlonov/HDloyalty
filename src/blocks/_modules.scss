@@ -1,4 +1,14 @@
 @import "modules/header/header";
 @import "modules/btn/btn";
 @import "modules/page1/page1";
+@import "modules/page-func/page-func";
 @import "modules/footer/footer";
+
+
+.main_h2 {
+    font-family: $mainFont;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+    color: #fff;
+}
