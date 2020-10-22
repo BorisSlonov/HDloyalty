@@ -2,8 +2,16 @@
 @import "modules/btn/btn";
 @import "modules/page1/page1";
 @import "modules/page-func/page-func";
+@import "modules/page-for-who/page-for-who";
 @import "modules/footer/footer";
 
+.text-yellow {
+    color: $yellow;
+}
+
+.text-red {
+    color: #DB3C71;
+}
 
 .main_h2 {
     font-family: $mainFont;

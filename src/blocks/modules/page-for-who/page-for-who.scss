@@ -1,0 +1,57 @@
+.page_for_who_wrap {
+    background-color: #26261F;
+    padding-bottom: 3rem;
+}
+
+.page_for_who {
+    display: flex;
+    margin-top: 3rem;
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-basis: 50%;
+    }
+
+    &__item {
+        flex-basis: 50%;
+        text-align: center;
+        margin: 0 0.5rem;
+    }
+
+    &__img {
+        object-fit: contain;
+        width: 100%;
+        transition: all .25s;
+
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 0 8px 0 $green;
+
+            +.page_for_who__descr {
+                color: $green;
+                transition: all .25s;
+            }
+        }
+    }
+
+
+
+    &__descr {
+        font-family: $mainFont;
+        display: inline-block;
+        margin-top: 1rem;
+        font-size: 1.4rem;
+        color: #fff;
+    }
+}
+
+@media(max-width:550px) {
+    .page_for_who {
+        flex-direction: column;
+
+        &__row:not(:first-child) {
+            margin-top: 1.5rem;
+        }
+    }
+}
