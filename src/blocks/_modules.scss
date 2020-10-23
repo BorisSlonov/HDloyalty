@@ -3,6 +3,7 @@
 @import "modules/page1/page1";
 @import "modules/page-func/page-func";
 @import "modules/page-for-who/page-for-who";
+@import "modules/page-process/page-process";
 @import "modules/footer/footer";
 
 .text-yellow {
@@ -11,6 +12,10 @@
 
 .text-red {
     color: #DB3C71;
+}
+
+.text-purple {
+    color: $purple;
 }
 
 .main_h2 {
