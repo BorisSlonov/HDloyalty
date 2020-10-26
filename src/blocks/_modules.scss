@@ -4,10 +4,18 @@
 @import "modules/page-func/page-func";
 @import "modules/page-for-who/page-for-who";
 @import "modules/page-process/page-process";
+@import "modules/page-cases/page-cases";
+@import "modules/cases-slider/cases-slider";
+@import "modules/page-how-work/page-how-work";
+@import "modules/page-tariffs/page-tariffs";
 @import "modules/footer/footer";
 
 .text-yellow {
     color: $yellow;
+}
+
+.text-green {
+    color: $green;
 }
 
 .text-red {
