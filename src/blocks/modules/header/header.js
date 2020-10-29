@@ -1,3 +1,5 @@
+'use strict'
+
 //burger
 window.addEventListener('DOMContentLoaded', () => {
     const menu = document.querySelector('.header__list'),
@@ -17,7 +19,7 @@ window.addEventListener('DOMContentLoaded', () => {
     })
 })
 
-//slowScroll
+// slowScroll
 const anchors = document.querySelectorAll('a[href*="#"]')
 
 for (let anchor of anchors) {
@@ -32,6 +34,7 @@ for (let anchor of anchors) {
         })
     })
 }
+
 
 
 //add class on scroll

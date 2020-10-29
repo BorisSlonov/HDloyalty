@@ -1,7 +1,12 @@
 .main-btn {
+    background-color: transparent;
+    cursor: pointer;
+    text-align: center;
+    display: inline-block;
     font-family: $textFont;
     border: 2px solid $green;
     color: $green;
+    letter-spacing: .35px;
     padding: 0.75rem 2.75rem;
     text-decoration: none;
     transition: all .25s;

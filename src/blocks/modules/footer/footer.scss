@@ -1,0 +1,64 @@
+.footer {
+    background-color: #303030;
+    color: #fff;
+    padding: 2rem 0;
+
+    &__body {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        font-family: $mainFont;
+        font-size: 1.4rem;
+        flex-basis: 20%;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    &__menu {
+        width: 100%;
+        flex-basis: 80%;
+    }
+
+    &__list {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    &__link {
+        color: #fff;
+        text-decoration: none;
+        transition: all .25s;
+        &:hover {
+            color: $green;
+        }
+    }
+}
+
+@media(max-width:1050px) {
+    .footer {
+        &__body {
+            flex-direction: column;
+        }
+
+        &__menu {
+            margin-top: 1.5rem;
+          
+        }
+
+        &__list {
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        &__link {
+            display: inline-block;
+            margin: 1rem;
+        }
+    }
+}
