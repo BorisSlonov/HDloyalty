@@ -69,6 +69,10 @@
         font-family: $mainFont;
         font-size: 1.4rem;
 
+        &_result {
+            margin-top: 2rem;
+        }
+
     }
 
     &__item:first-child {
@@ -115,7 +119,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     height: 90%;
 
     li:not(:first-child) {
