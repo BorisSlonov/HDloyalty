@@ -120,7 +120,7 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 1.5rem;
-    height: 90%;
+    height: 80%;
 
     li:not(:first-child) {
         margin-top: 1rem;
@@ -172,6 +172,10 @@
 @media(max-width:560px) {
     .slide {
         padding: 25px 15px;
+    }
+
+    .buis_name {
+        display: block;
     }
 
     .slide-content {
