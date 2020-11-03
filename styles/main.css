@@ -1343,6 +1343,7 @@ body {
   padding: 2rem 0;
   color: #fff;
   --swiper-theme-color: #F29F05;
+  margin-top: 1.25rem;
 }
 
 .swiper-slide {
