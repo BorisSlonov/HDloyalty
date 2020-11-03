@@ -3,7 +3,7 @@
 
 var menu = ['Slide 1', 'Slide 2', 'Slide 3']
 var mySwiper = new Swiper('.swiper-container', {
-    calculateHeight:true,
+    autoHeight:true,
     effect: 'cube',
     speed: 1000,
     cubeEffect: {
