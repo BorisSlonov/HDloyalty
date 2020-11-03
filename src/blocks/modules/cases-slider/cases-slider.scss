@@ -82,6 +82,9 @@
     }
 
     &__item:last-child {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         border-left: 2px dashed rgba(255, 255, 255, 0.65);
         padding-left: 25px;
     }
@@ -120,8 +123,8 @@
     flex-direction: column;
     justify-content: space-between;
     margin-top: 1.5rem;
-    height: 80%;
-
+    padding-bottom: 2rem;
+    height: 100%;
     li:not(:first-child) {
         margin-top: 1rem;
     }
