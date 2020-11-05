@@ -1876,6 +1876,16 @@ body {
   color: #fff;
 }
 
+.main_h2__descr {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: .75rem;
+  margin-bottom: 1.5rem;
+  color: #fff;
+  text-align: center;
+}
+
 @media (max-width: 1140px) {
   .how-work__row {
     flex-wrap: wrap;
@@ -2107,7 +2117,7 @@ body {
   }
 
   .process__descr {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
   }
 }
 
