@@ -2,6 +2,9 @@
 
 var_dump($_POST);
 
+$convertedText = mb_convert_encoding($msg, 'utf-8', mb_detect_encoding($msg));
+
+
 $token = "1437004960:AAFNz7URg5eyKN1aMcweP8VsTVp6H5PbPbw";
 $chat_id = "-400261710";
 $msg = json_encode($_POST);
