@@ -12,13 +12,17 @@ if($sendToTelegram)
     {
 echo
         '<div style="background-color:rgb(59, 59, 53);height:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;">
-            <span style="font-size:18px;color:#fff;">Ваша заявка отправлена, свяжемся с вами в ближайшее время</span>
-        </div>'
+            <span style="font-size:18px;color:#fff;font-family:sans-serif;">Ваша заявка отправлена, свяжемся с вами в ближайшее время</span>
+        </div>
+        <style>*{padding:0;margin:0;}</style>
+        '
 ;
 } else {
 echo   '<div style="background-color:rgb(59, 59, 53);height:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;">
-<span style="font-size:18px;color:#fff;">Что-то пошло не так, заполните заявку еще раз</span>
-</div>'
+<span style="font-size:18px;color:#fff;font-family:sans-serif;">Что-то пошло не так, заполните заявку еще раз</span>
+</div>
+<style>*{padding:0;margin:0;}</style>
+'
 ;
 }
 
