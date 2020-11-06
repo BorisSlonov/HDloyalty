@@ -1,5 +1,5 @@
 <?php 
-
+header("Content-Type: text/html; charset=utf-8");
 var_dump($_POST);
 
 $token = "1437004960:AAFNz7URg5eyKN1aMcweP8VsTVp6H5PbPbw";
