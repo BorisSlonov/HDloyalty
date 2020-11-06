@@ -11,13 +11,15 @@ $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_i
 if($sendToTelegram)
     {
 echo
-        '<div class="uk-button-group">
-                <a class="uk-button uk-button-link uk-button-large" href="../auth/signup.php">Регистрация</a>
-                <a class="uk-button uk-button-success uk-button-large uk-margin-left" href="../auth/login.php" style="background-color: #ffb433;"onmouseover="this.style.backgroundColor=\'#eb8d00\';" onmouseout="this.style.backgroundColor=\'#ffb433\';"><i class="uk-icon-lock uk-margin-small-right"></i> Войти</a>
+        '<div style="background-color:rgb(59, 59, 53);height:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;">
+            <span style="font-size:18px;color:#fff;">Ваша заявка отправлена, свяжемся с вами в ближайшее время</span>
         </div>'
 ;
 } else {
-echo 'Ошибка отправки, попробуйте еще раз!';
+echo   '<div style="background-color:rgb(59, 59, 53);height:100%;min-height:100vh;display:flex;justify-content:center;align-items:center;">
+<span style="font-size:18px;color:#fff;">Что-то пошло не так, заполните заявку еще раз</span>
+</div>'
+;
 }
 
 
