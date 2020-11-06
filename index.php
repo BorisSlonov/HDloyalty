@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-
+<!-- php -->
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -25,7 +25,7 @@
     <link rel="apple-touch-icon" sizes="167x167" href="img/favicons/apple-touch-icon-167x167.png">
     <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/apple-touch-icon-180x180.png">
     <link rel="apple-touch-icon" sizes="1024x1024" href="img/favicons/apple-touch-icon-1024x1024.png">
-    <link rel="stylesheet" href="styles/main.min.css">
+    <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
@@ -115,7 +115,7 @@
         </div>
         <!-- btn -->
         <div class="page1__btn-wrap">
-            <a class="main-btn" href="#">
+            <a class="main-btn" href="#form">
     Подключиться
 </a>
         </div>
@@ -179,7 +179,7 @@
 
 
         <div class="page_func_btn_container">
-            <a class="main-btn" href="#">
+            <a class="main-btn" href="#form">
     Подключиться
 </a>
         </div>
@@ -429,7 +429,7 @@
             <!-- row -->
 
             <div class="page_process_btn_container">
-                <a class="main-btn" href="#">
+                <a class="main-btn" href="#form">
     Подключиться
 </a>
             </div>
@@ -1048,7 +1048,7 @@
             </div>
 
             <div class="services__btn-wrap services__btn-wrap_768-none">
-                <a class="main-btn" href="#">
+                <a class="main-btn" href="#form">
     Подключиться
 </a>
             </div>
@@ -1156,7 +1156,7 @@
         </div>
     </div>
     <div class="services__btn-wrap services__btn-wrap_768-block">
-        <a class="main-btn" href="#">
+        <a class="main-btn" href="#form">
     Подключиться
 </a>
     </div>
@@ -1179,7 +1179,7 @@
         
             <!-- form -->
             <div class="page-form__form">
-                <form method="POST" action="send.php" class="form">
+                <form method="POST" action="/send.php" id="form" class="form">
     <div class="form__row">
         <label class="form__label" for="Имя">Имя</label>
         <input class="form__input" type="name" name="name"> 
@@ -1194,11 +1194,13 @@
     </div>
 
     <div class="form__row">
-        <button class="main-btn" href="#">
+        <button class="main-btn" href="#form">
     Отправить
 </button>
     </div>
 </form>
+<!-- //aa -->
+
             </div>
             <!-- form -->
             <!-- contacts -->
@@ -1284,9 +1286,9 @@
     </div>
 </div>
 <!-- burger -->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.min.js"></script>
-    <script src="js/main.min.js"></script>
-    <script src="js/vendor.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/vendor.js"></script>
 </body>
 
 </html>
