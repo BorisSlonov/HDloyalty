@@ -1,13 +1,11 @@
 <?php 
 
-
-var_dump($_POST);
-
 $token = "1437004960:AAFNz7URg5eyKN1aMcweP8VsTVp6H5PbPbw";
-
 $chat_id = "-400261710";
+
 $msg = json_encode($_POST);
 $sendToTelegram = fopen("https://api.telegram.org/bot{$token}/sendMessage?chat_id={$chat_id}&parse_mode=html&text={$msg}","r");
+
 if ($_POST['act'] == 'order') {
     $name = ($_POST['name']);
     $email = ($_POST['email']);
@@ -33,5 +31,4 @@ if ($_POST['act'] == 'order') {
   }
 
 }
-// comment 3
 ?>
