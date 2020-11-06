@@ -1,15 +1,15 @@
-<form class="form">
+<form method="POST" action="/send.php" id="form" class="form">
     <div class="form__row">
         <label class="form__label" for="Имя">Имя</label>
-        <input class="form__input" type="name">
+        <input class="form__input" type="name" name="name"> 
     </div>
     <div class="form__row">
         <label class="form__label" for="Email">Email</label>
-        <input class="form__input" type="email">
+        <input class="form__input" type="email" name="email">
     </div>
     <div class="form__row">
         <label class="form__label" for="Сообщение">Сообщение</label>
-        <textarea class="form__textarea" name="Сообщение"></textarea>
+        <textarea class="form__textarea" name="Сообщение" name="message"></textarea>
     </div>
 
     <div class="form__row">
