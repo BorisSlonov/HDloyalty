@@ -1,10 +1,10 @@
 <?php 
-header("Content-Type: text/html; charset=utf-8");
+
 var_dump($_POST);
 
 $token = "1437004960:AAFNz7URg5eyKN1aMcweP8VsTVp6H5PbPbw";
 $chat_id = "-400261710";
-$msg = json_encode($_POST);
+$msg = json_encode($_POST, JSON_UNESCAPED_UNICODE);
 
 // $convertedText = mb_convert_encoding($txt, 'utf-8', mb_detect_encoding($txt));
 
