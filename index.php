@@ -1189,8 +1189,8 @@
         <input class="form__input" type="email" name="email">
     </div>
     <div class="form__row">
-        <label class="form__label" for="Сообщение">Сообщение</label>
-        <textarea class="form__textarea" name="Сообщение" name="message"></textarea>
+        <label class="form__label" for="message">Сообщение</label>
+        <textarea class="form__textarea"  name="message"></textarea>
     </div>
 
     <div class="form__row">
