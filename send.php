@@ -1,6 +1,6 @@
 <?php 
 
-// var_dump($_POST);
+var_dump($_POST);
 // $msg = json_encode($_POST);
 // $convertedText = mb_convert_encoding($txt, 'utf-8', mb_detect_encoding($txt));
 
