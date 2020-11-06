@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
-<!-- php -->
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -1194,8 +1194,8 @@
     </div>
 
     <div class="form__row">
-        <button type="submit" class="main-btn" href="#form">
-    Отправить
+        <button type="submit" class="main-btn">
+    Отправить 
 </button>
     </div>
 </form>
